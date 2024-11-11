@@ -2,8 +2,9 @@
     import { base } from '$app/paths';
 
     export let tabs = [
-        { name: "Shop", link: "/project2/Shop" },
-        { name: "Contact", link: "/project2/Contact" },
+        { name: "Shop", link: "/project2/shop" },
+        { name: "Contact", link: "/project2/contact" },
+        { name: "Catalogue", link: "/project2/catalogue" },
     ];
 
     let dropdown = false;
@@ -15,6 +16,7 @@
     </a>
     <div class="space-x-2">
         <a class="rounded-full drop-shadow-sm font-semibold text-white border-2 border-white hover:bg-red-900 px-4 py-3" href="{tabs[0].link}">{tabs[0].name}</a>
+        <a class="rounded-full drop-shadow-sm font-semibold text-white border-2 border-white hover:bg-red-900 px-4 py-3" href="{tabs[2].link}">{tabs[2].name}</a>
         <a class="rounded-full drop-shadow-sm font-semibold text-white border-2 border-white hover:bg-red-900 px-4 py-3" href="{tabs[1].link}">{tabs[1].name}</a>
     </div>
 </div>
