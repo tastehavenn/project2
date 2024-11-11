@@ -14,7 +14,7 @@ adapter: adapter({
             strict: true
         }),
         paths: {
-            base: '/project2' 
+            base: "/project2",
         }
 }
 };
