@@ -2,12 +2,12 @@
     import Navbar from "$lib/+navbar.svelte";
 
     let Products = [
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"},
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"},
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"},
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"},
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"},
-        {img:"images.jpg", name: "Grilled Steak", price:"$300"}
+        {img:"Grilled Steak.png", name: "Grilled Steak", price:"$150"},
+        {img:"Chicken Burger.png", name: "Chicken Burger", price:"$100"},
+        {img:"Ramen.png", name: "Ramen", price:"$150"},
+        {img:"Roasted Chicken.png", name: "Roasted Chicken", price:"$350"},
+        {img:"Pasta Eleganza.png", name: "Pasta Eleganza", price:"$130"},
+        {img:"Braciole.png", name: "Braciole", price:"$150"}
     ];
 </script>
 
