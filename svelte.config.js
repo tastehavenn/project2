@@ -16,7 +16,7 @@ adapter: adapter({
         paths: {
             base: "/project2",
         },
-}
+    },
 };
 
 export default config;
