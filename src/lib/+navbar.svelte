@@ -2,8 +2,8 @@
     import { base } from '$app/paths';
 
     export let tabs = [
-        { name: "Shop", link: "/project2/shop" },
-        { name: "Contact", link: "/project2/contact" },
+        { name: "Shop", link: "/project2/Shop" },
+        { name: "Contact", link: "/project2/Contact" },
         { name: "Catalogue", link: "/project2/catalogue" },
     ];
 
