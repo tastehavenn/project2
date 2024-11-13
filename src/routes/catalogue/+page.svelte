@@ -19,7 +19,7 @@
     }
 
     .catalogue-container {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("background.jpg");
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("background.JPG");
         background-size: cover;
         background-position: center;
     }
