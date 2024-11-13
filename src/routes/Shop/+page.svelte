@@ -11,6 +11,7 @@
 
     function updateQuantity(change: number) {
         steak = Math.max(1, steak + change);
+        
   }
 </script>
 
@@ -28,7 +29,7 @@
         left: 20px;
     }
 
-    .quantity{
+    .quantity {
         padding-top: 0.40rem;
         padding-bottom: 0.40rem;
     }
