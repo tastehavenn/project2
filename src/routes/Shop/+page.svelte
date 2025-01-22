@@ -1,18 +1,14 @@
 <script lang="ts">
 	import Navbar from "$lib/+navbar.svelte";
 
-    let checked = $state(false);
-
-    let order = $state([""]);
-
-    let list 
-
-    let steak = $state(1);
+    let checked = false;
+    let order: string[] = [];
+    let list;
+    let steak = 1;
 
     function updateQuantity(change: number) {
         steak = Math.max(1, steak + change);
-        
-  }
+    }
 </script>
 
 <style>
@@ -104,23 +100,6 @@
                                     </svg>
                                 </button>
                                 <button aria-label="remove" disabled={!checked} onclick={() => updateQuantity(-1)}  class="rounded-full flex items-center hover:border hover:border-black w-4">
-                                    <svg class="w-[14px] h-[14px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="black" viewBox="0 0 24 24">
-                                        <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
-                                    </svg>
-                                                                        
-                                </button>
-                            </div>
-                        </div>
-                        <div class="quantity flex justify-end px-1">
-                            <p class=" font-bold">1x</p>
-                            <div class=" ml-3 flex flex-col"> 
-                                <button aria-label="add" class="rounded-full flex items-center hover:border hover:border-black w-4">
-                                    <svg class="w-[14px] h-[14px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="black" viewBox="0 0 24 24">
-                                        <path fill-rule="evenodd" d="M5.575 13.729C4.501 15.033 5.43 17 7.12 17h9.762c1.69 0 2.618-1.967 1.544-3.271l-4.881-5.927a2 2 0 0 0-3.088 0l-4.88 5.927Z" clip-rule="evenodd"/>
-                                    </svg>
-                                    
-                                </button>
-                                <button aria-label="remove" class="rounded-full flex items-center hover:border hover:border-black w-4">
                                     <svg class="w-[14px] h-[14px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="4" height="4" fill="black" viewBox="0 0 24 24">
                                         <path fill-rule="evenodd" d="M18.425 10.271C19.499 8.967 18.57 7 16.88 7H7.12c-1.69 0-2.618 1.967-1.544 3.271l4.881 5.927a2 2 0 0 0 3.088 0l4.88-5.927Z" clip-rule="evenodd"/>
                                     </svg>

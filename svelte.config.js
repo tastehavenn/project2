@@ -3,10 +3,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-preprocess: vitePreprocess(),
+    vite: {
+        define: {
+            'process.env.SVELTE_VERSION': '"5"'
+        }
+    },
+    preprocess: vitePreprocess(),
 
-kit: {
-adapter: adapter({
+    kit: {
+        adapter: adapter({
             pages: "build",
             assets: "build",
             fallback: "index.html",
